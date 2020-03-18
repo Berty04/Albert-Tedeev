@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body
+    style="font-family: sans-serif; font-size: 14px; background-color: #eee;"
+  >
+    <img
+      src="https://sites.google.com/site/feexpr/_/rsrc/1421337235224/Downhome/Topic1/zadania-1/Icon-Python.png"
+      alt="Python logo"
+      title="Логотип Python"
+      align="right"
+      width="250"
+    />
+    <h1><strong>HOW-TO: Программа на Python, Часть 1</strong></h1>
+    <ul>
+      <li>
+        <em
+          ><a href="HW6_CSS. Intro_Part_1_var.1.html"
+            >Программа на Python — часть 1</a
+          ></em
+        >
+      </li>
+      <li>
+        <em
+          ><a href="HW6_CSS. Intro_Part_2_var.1.html"
+            >Программа на Python — часть 2</a
+          ></em
+        >
+      </li>
+      <li>
+        <em
+          ><a href="HW6_CSS. Intro_Part_3_var.1.html"
+            >Программа на Python — часть 3</a
+          ></em
+        >
+      </li>
+    </ul>
+
+    <h2 id="to content"><strong>Содержание</strong></h2>
+
+    <h3><strong>HOW-TO: Программа на Python, Часть 1</strong></h3>
+    <ul>
+      <li><a href="#chapter1">Наша первая программа</a></li>
+      <li><a href="#chapter2">Пример цикла For</a></li>
+    </ul>
+    <p>
+      Из множества существующих языков программирования Python — один из самых
+      лёгких в изучении. Он создан в конце 80-х годов XX века, но с тех пор он
+      сильно изменился. Хотя Python входит в состав большинства дистрибутивов
+      Linux, на него часто не обращают внимания при выборе языка для изучения. В
+      этой статье мы рассмотрим создание консольных приложений, а в следующей —
+      программирование графических интерфейсов (<ins>GUI</ins>). Давайте
+      создадим простую программу прямо сейчас.
+    </p>
+
+    <h2 id="chapter1"><strong>Наша первая программа</strong></h2>
+    <a href="#to content">К содержанию</a>
+    <p>
+      Наберём код в текстовом редакторе (например, в <strong>gedit</strong>).
+      Потом мы разберёмся, что делает каждая строка и пойдём дальше.
+    </p>
+    <p>Введите эти 4 строки:</p>
+    <br />
+    <code
+      >#!/usr/bin/env python<br />
+      print 'Hello. I am a python program.'<br />
+      name = raw_input("What is your name?")<br />
+      print "Hello there, " + name + "!"</code
+    ><br />
+    <p>
+      Это всё. Сохраните файл как <strong>hello.py</strong> в любом месте. Я
+      предлагаю сохранить его в папке <strong>python_examples</strong> в
+      домашнем каталоге. Этот пример показывает, как просто написать программу
+      на Python. Для запуска программы нужно сделать её файл исполняемым. Для
+      этого введите в терминале<br /><br />
+      <em><ins>chmod +x hello.py</ins></em>
+      <br /><br />
+      в папке, в которой вы сохранили программу. Теперь запустите её.
+    </p>
+    <br />
+    <code
+      >greg@earth:~/python_examples$ ./hello.py<br />
+      Hello. I am a python program. <br />
+      What is your name? Ferd Burphel<br />
+      Hello there, Ferd Burphel!<br />
+      greg@earth:~/python_examples$</code
+    ><br />
+    <p>Вот и всё.</p>
+
+    <h2 id="chapter2"><strong>Пример цикла For</strong></h2>
+    <a href="#to content">К содержанию</a>
+    <p>
+      Теперь давайте рассмотрим пример программирования цикла. Запустите
+      текстовый редактор и наберите следующую программу:
+    </p>
+    <br />
+    <code>
+      <pre>#!/usr/bin/env python<br>for cntr in range(0,10):<br>    print cntr</pre>
+    </code>
+    <p>
+      <em
+        >Не забудьте поставить символ табуляции перед строкой «print cntr».</em
+      >
+      Это важно. В Python для указания на блоки кода используются не круглые
+      «<b>(</b>» и фигурные «<b>{</b>» скобки как в других языках
+      программирования, а отступы.
+    </p>
+
+    <a href="#">
+      <img
+        src="https://sites.google.com/site/feexpr/Downhome/Topic1/zadania-1/prev.png"
+        alt="Previous page"
+        title="Предыдцщая страница"
+        align="left"
+        width="30"
+    /></a>
+
+    <a href="HW2_Multimedia_Task_2.html">
+      <img
+        src="https://sites.google.com/site/feexpr/Downhome/Topic1/zadania-1/next.png"
+        alt="Next page"
+        title="Следующая страница"
+        align="right"
+        width="30"
+    /></a>
+
+    <a href="#to content">
+      <center>
+        <img
+          src="https://sites.google.com/site/feexpr/Downhome/Topic1/zadania-1/home.png"
+          alt="To content"
+          title="К содержанию"
+          width="30"
+        /></center
+    ></a>
+  </body>
+</html>

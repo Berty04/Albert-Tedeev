@@ -1,0 +1,23 @@
+header {
+  text-align: end;
+}
+h1 {
+  font-family: "Times New Roman", serif;
+  font-size: medium;
+}
+address {
+  text-align: end;
+}
+h3 {
+  font-family: "Bad Script", cursive;
+  font-weight: bold;
+  text-indent: 5mm;
+  text-decoration: underline;
+}
+article {
+  font-family: "Bad Script", cursive;
+  text-indent: 5mm;
+}
+footer {
+  font-family: "Times New Roman", serif;
+}
