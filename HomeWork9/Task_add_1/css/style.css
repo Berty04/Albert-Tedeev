@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h2 {
+  margin: 5px 5px 20px;
+}
+p {
+  text-indent: 1em;
+  padding: 10px 10px;
+  border: 2px outset lightgrey;
+  border-width: 0.5px;
+  border-radius: 0 1em/2em;
+  margin: 4px;
+}
+p a[href^="https://"]::before {
+  content: url(../pic/extref.png);
+  margin-right: 2px;
+}
+p a[href^="files/document.doc"]::after {
+  content: url(../pic/logo-doc.jpg);
+  margin-left: 2px;
+}
+p a[href^="files/document.pdf"]::after {
+  content: url(../pic/logo-pdf.png);
+  margin-left: 2px;
+}
+p a[href^="files/document.zip"]::after {
+  content: url(../pic/logo-zip.gif);
+  margin-left: 2px;
+}
+h3 {
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+}
+li a {
+  margin-left: 20px;
+}
+li a::before {
+  content: url(../pic/logo-list.jpg);
+  margin-right: 5px;
+}
+li > a[href^="files/document.doc"]:hover::after {
+  content: url(../pic/logo-doc.jpg);
+}
+li > a[href^="files/document.pdf"]:hover::after {
+  content: url(../pic/logo-pdf.png);
+}
+li > a[href^="files/document.zip"]:hover::after {
+  content: url(../pic/logo-zip.gif);
+}

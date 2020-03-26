@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin-left: 8px;
+  margin-top: 8px;
+}
+li {
+  list-style: none;
+  color: grey;
+  line-height: 25px;
+  background-color: lightgrey;
+  border: black;
+  border-style: inset;
+  border-width: thin;
+  border-radius: 4px;
+  width: 150px;
+}
+.submenu {
+  position: absolute;
+  visibility: hidden;
+  transform: translate(-50%, 20px);
+  transition: 0.5s;
+}
+.menu > li:hover .submenu {
+  visibility: visible;
+  transform: translate(0%, 0);
+}
+
+.menu > li:hover {
+  color: lightgrey;
+  background-color: darkslategrey;
+}
+
+@media all and (min-width: 1074px) {
+  .menu > li {
+    display: inline-block;
+    position: relative;
+  }
+}
